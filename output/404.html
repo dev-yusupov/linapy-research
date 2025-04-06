@@ -7,14 +7,14 @@
         
         <meta name="author" content="Bobur Yusupov">
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
+        <link rel="shortcut icon" href="/linapy-research/img/favicon.ico">
         <title>LinaPy Research</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/fontawesome.min.css" rel="stylesheet">
-        <link href="/css/brands.min.css" rel="stylesheet">
-        <link href="/css/solid.min.css" rel="stylesheet">
-        <link href="/css/v4-font-face.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link href="/linapy-research/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/linapy-research/css/fontawesome.min.css" rel="stylesheet">
+        <link href="/linapy-research/css/brands.min.css" rel="stylesheet">
+        <link href="/linapy-research/css/solid.min.css" rel="stylesheet">
+        <link href="/linapy-research/css/v4-font-face.min.css" rel="stylesheet">
+        <link href="/linapy-research/css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/.">LinaPy Research</a>
+                <a class="navbar-brand" href="/linapy-research/.">LinaPy Research</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,23 +35,50 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="/." class="nav-link">Main</a>
+                                <a href="/linapy-research/." class="nav-link">Main</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/linapy-research/environment/" class="nav-link">Environment</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Libraries</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/libraries/cupy/" class="dropdown-item">Cupy</a>
+    <a href="/linapy-research/libraries/cupy/" class="dropdown-item">Cupy</a>
 </li>
                                     
 <li>
-    <a href="/libraries/numpy/" class="dropdown-item">Research on Numpy</a>
+    <a href="/linapy-research/libraries/scipy/" class="dropdown-item">Scipy</a>
 </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Numpy</a>
+    <ul class="dropdown-menu">
+            
 <li>
-    <a href="/libraries/scipy/" class="dropdown-item">Scipy</a>
+    <a href="/linapy-research/libraries/numpy/main/" class="dropdown-item">Main</a>
 </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Performance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/linapy-research/libraries/numpy/performance/linsys/" class="dropdown-item">Solving Linear Systems</a>
+</li>
+            
+<li>
+    <a href="/linapy-research/libraries/numpy/performance/matinverse/" class="dropdown-item">Matrix Inversion</a>
+</li>
+            
+<li>
+    <a href="/linapy-research/libraries/numpy/performance/matmult/" class="dropdown-item">Matrix Multiplication</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                         </ul>
@@ -85,13 +112,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/linapy-research/js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = "/",
+            var base_url = "/linapy-research/",
                 shortcuts = {"next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js"></script>
-        <script src="/search/main.js"></script>
+        <script src="/linapy-research/js/base.js"></script>
+        <script src="/linapy-research/search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

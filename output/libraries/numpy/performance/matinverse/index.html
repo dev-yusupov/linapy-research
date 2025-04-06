@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Bobur Yusupov">
-        
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Cupy - LinaPy Research</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/fontawesome.min.css" rel="stylesheet">
-        <link href="../../css/brands.min.css" rel="stylesheet">
-        <link href="../../css/solid.min.css" rel="stylesheet">
-        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="canonical" href="https://dev-yusupov.github.io/linapy-research/libraries/numpy/performance/matinverse/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Matrix Inversion - LinaPy Research</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">LinaPy Research</a>
+                <a class="navbar-brand" href="../../../..">LinaPy Research</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,23 +35,50 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="../.." class="nav-link">Main</a>
+                                <a href="../../../.." class="nav-link">Main</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../../environment/" class="nav-link">Environment</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Libraries</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Cupy</a>
+    <a href="../../../cupy/" class="dropdown-item">Cupy</a>
 </li>
                                     
 <li>
-    <a href="../numpy/" class="dropdown-item">Research on Numpy</a>
+    <a href="../../../scipy/" class="dropdown-item">Scipy</a>
 </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Numpy</a>
+    <ul class="dropdown-menu">
+            
 <li>
-    <a href="../scipy/" class="dropdown-item">Scipy</a>
+    <a href="../../main/" class="dropdown-item">Main</a>
 </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Performance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linsys/" class="dropdown-item">Solving Linear Systems</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Matrix Inversion</a>
+</li>
+            
+<li>
+    <a href="../matmult/" class="dropdown-item">Matrix Multiplication</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                         </ul>
@@ -63,12 +90,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../.." class="nav-link">
+                                <a rel="prev" href="../linsys/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../numpy/" class="nav-link">
+                                <a rel="next" href="../matmult/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -89,12 +116,17 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#matrix-inversion" class="nav-link">Matrix Inversion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-</div>
+<h1 id="matrix-inversion">Matrix Inversion</h1></div>
             </div>
         </div>
 
@@ -102,13 +134,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = "../..",
+            var base_url = "../../../..",
                 shortcuts = {"next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../js/base.js"></script>
-        <script src="../../search/main.js"></script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://dev-yusupov.github.io/linapy-research/</loc>
+         <lastmod>2025-04-06</lastmod>
+    </url>
+    <url>
+         <loc>https://dev-yusupov.github.io/linapy-research/environment/</loc>
+         <lastmod>2025-04-06</lastmod>
+    </url>
+    <url>
+         <loc>https://dev-yusupov.github.io/linapy-research/libraries/cupy/</loc>
+         <lastmod>2025-04-06</lastmod>
+    </url>
+    <url>
+         <loc>https://dev-yusupov.github.io/linapy-research/libraries/scipy/</loc>
+         <lastmod>2025-04-06</lastmod>
+    </url>
+    <url>
+         <loc>https://dev-yusupov.github.io/linapy-research/libraries/numpy/main/</loc>
+         <lastmod>2025-04-06</lastmod>
+    </url>
+    <url>
+         <loc>https://dev-yusupov.github.io/linapy-research/libraries/numpy/performance/linsys/</loc>
+         <lastmod>2025-04-06</lastmod>
+    </url>
+    <url>
+         <loc>https://dev-yusupov.github.io/linapy-research/libraries/numpy/performance/matinverse/</loc>
+         <lastmod>2025-04-06</lastmod>
+    </url>
+    <url>
+         <loc>https://dev-yusupov.github.io/linapy-research/libraries/numpy/performance/matmult/</loc>
+         <lastmod>2025-04-06</lastmod>
+    </url>
+</urlset>
